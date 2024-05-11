@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Play minecraft 1.8 in your browser" />
+    <meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
+    <title>Eaglercraft 1.8</title>
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EaglercraftX 1.8" />
+    <meta property="og:description" content="Play minecraft 1.8 in your browser" />
+    <link rel="shortcut icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/wAALCAAyADIBAREA/8QAHQAAAAYDAQAAAAAAAAAAAAAAAAECAwQGBwgJBf/EACwQAAIBAwMDAwQBBQAAAAAAAAECAwQFEQAGBwgSIQkxQRMiUWFxFDJDUpH/2gAIAQEAAD8A6p6SXVfc6T9aL/caJqiFRkuAPzpQlQ4Ib30rIPto9ExwpI1gLrJ5T5L4o6f9yb+4ksMN5v8Aa3pmSnmpHqY1pzKBPI0aMrEJH3HIPg48Ea8/o+5o5C514VtPI/Ie0hYbnWl4ngSKSKOoCeBUxLJlhFJk9oycdh8nOvI64+ZeTeGODbhvLiaxpcL7S1NMHM1E9SlLRszCafsUjyv2DJyFzkj21eOl/fHJ2/OEdr7o5Y2mLBuW6UxnqKOM5H0v8UoBJKB07X7SSVz51malLtGC4IyPH70/pEpxGx1olzj6gm4enPm+4cV8i8LV16t1etLUbarrPUdktYsh7cOsoKlg4dfs+V/5U6j1iuNaa9HacnCW8Fq/riF1FTC8kcx8FSnb3Eg+CACc5Az768jfXq60ezblRUdw6dN20Yqu2ZEu9UtI0tN3ujTRAplvKELkAZDA+2j4l9QXk3qd6ldl7K4x2hXbW2hbnkn3HHUGOeWRcOoErgDsTuKABcN3Eg5B8dJbbJIydrv3BVAHjGpukyAGNgTgY1pD6mfCa8lcCVW7LU0VHftlVBucFYQVIpCO2pVnUFgojBYAfIP588rD037xvHEFv53sFxrNxxz3m50VwkoqYFKNaKOKT+oeSRlLB1dm8qP7POc6d4D4X371Wb1l43a51yXKy2OuudPU1qvJ2oiI8UPaWUL3sSQSfJfJzjWcfTKo7xx31j1ewd/xXKxbgqKKropbdV0wEk06ZdkkZzlfALgqD3kAA4OT2yoBH25RSuF7WyPOR76l6JhlSNVXfO0rNvHat42tuS0rcLReKOWir6Z2KrNTyKVdSVIYAgnyCCPjWoXp07Egl6Tr7sOrhKQVm5Nw2qUGN1H0ZAkXscEjtbIPyD7/AIrvpccEbr49HI+/tw22GKhv90e0WSodiZ6ikoaiWENhiSsYKFFBwT2+cjB1lW5dGabm60F6m9wVSUlFZrfTJb4KepJmrK1ECB5lK/bGifaArZOFOceNbV0Ef0ogvd3H5J9zqVoaalgEoIJPn4z4OoaWaJJDIjlc+4AwP5/n96b25tiwbRtUdk23Z6O20MUksqU9LCI41eSRpJGAHyzuzE/JYnU9qcO3ex8/rTioqDAGlaGhoaGhoaGv/9k=" />
+    <script type="text/javascript" src="classes.js"></script>
+    <script type="text/javascript" src="fix-webm-duration.js"></script>
+    <script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        if (document.location.href.startsWith("file:")) {
+          alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+        } else {
+          window.eaglercraftXOpts = {
+            container: "game_frame",
+            assetsURI: "assets.epk",
+            localesURI: "lang/",
+            servers: [
+              { addr: "wss://mc.asspixel.net", name: "AssPixel" },
+              { addr: "wss://sus.shhnowisnottheti.me", name: "Ayunboom" },
+              { addr: "wss://aeon-network.net/1.8", name: "Aeon" },
+              { addr: "wss://beta.vanillacraftsmp.org/", name: "VanillaCraft" },
+              { addr: "wss://play.craftclue.rocks", name: "CraftClue" },
+              { addr: "wss://survival.asianf4rmer.repl.co/", name: "Asian F4rmer-survival" },
+              { addr: "wss://mc.sealcentral.co", name: "SealCraft" },
+              { addr: "wss://g.deev.is/eaglerx-reference", name: "Reference Implementation" },
+            ],
+          };
+          main();
+        }
+      });
+    </script>
+  </head>
+  <body style="margin: 0px; width: 100vw; height: 100vh; overflow:hidden;" onclick="window.focus()"; id="game_frame" onclick="window.focus()"></body>
+</html>
